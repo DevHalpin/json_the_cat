@@ -8,7 +8,7 @@ const fetchBreedDescription = (breedName, callback) => {
       if (data[0]) {
         callback(null,data[0].description);
       } else {
-        callback(null, 'Are you sure this is a real cat?');
+        callback('Are you sure this is a real cat?', null );
       }
     } else if (error) {
       callback(error, null);
